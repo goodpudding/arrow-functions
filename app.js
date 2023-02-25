@@ -123,14 +123,18 @@ let objectLit = keys =>({
 console.log(objectLit(['value1', 'value2', 'value3']));
 
 
-let sumAndProduct = function(a, b) {
+// const multiLiner = word => {
+//   word = word.toUpperCase();
+//   return word;
+// };
+let sumAndProduct =(a, b) =>{
   let sum = a + b;
   let product = a * b;
   return [sum, product];
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
+console.log(sumAndProduct(3, 9));
 
 
 let message = function(name) {
