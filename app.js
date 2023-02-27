@@ -114,47 +114,48 @@ let sum =(a, b, c, d)=>  a + b + c + d;
 console.log(sum(1, 2, 3, 4));
 
 
-let objectLit = function() {
-  return {
-    key1: 'value1',
-    key2: 'value2',
-    key3: 'value3',
-  };
-};
-
+let objectLit = keys =>({
+  firstValue: keys[0],
+  secondValue: keys[1],
+  thirdValue: keys[2]
+  })
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(objectLit());
+console.log(objectLit(['value1', 'value2', 'value3']));
 
 
-let sumAndProduct = function(a, b) {
+// const multiLiner = word => {
+//   word = word.toUpperCase();
+//   return word;
+// };
+let sumAndProduct =(a, b) =>{
   let sum = a + b;
   let product = a * b;
   return [sum, product];
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(sumAndProduct(3, 9));
+console.log(sumAndProduct(3, 9));
 
 
-let message = function(name) {
-  return `Hello, ${name}!`;
-};
+let message = name=>`Hello, ${name}!`;
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(message('Allie'));
+console.log(message('Allie'));
 
 
-let Student = function(name, age, hometown) {
+class Student {
+  constructor(name, age, hometown){
   this.name = name;
   this.age = age;
   this.hometown = hometown;
+}
 };
 
 let joe = new Student('Joe Schmoe', 100, 'Anytown, USA');
 
 // TODO: Uncomment the following line of code to see the output in the browser console
 // Note that the arrow function will cause this code to break!
-// console.log(joe);
+console.log(joe);
 
 // TODO: After viewing the previous console.log(), return the code to a working state.
 
